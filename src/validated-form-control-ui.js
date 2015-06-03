@@ -8,9 +8,8 @@ define(['text!./validated-form-control.html'],
         var ValidatedFormControl = function(params, componentInfo) {
             var self=this;
 
-            self.property = params.property;
+            self.property = params.$raw.property();
             self.required = params.required;
-
         };
 
         // This runs when the component is torn down. Put here any logic necessary to clean up,
