@@ -1,27 +1,25 @@
 //    Copyright (c) CBC/Radio-Canada. All rights reserved.
 //    Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-define(['text!./validated-form-control.html'],
-    function(template) {
-        'use strict';
+import template from 'text!./validated-form-control.html';
 
-        var ValidatedFormControl = function(params, componentInfo) {
-            var self=this;
 
-            self.property = params.$raw.property();
-            self.required = params.required;
-        };
+var ValidatedFormControl = function(params, componentInfo) {
+    var self = this;
 
-        // This runs when the component is torn down. Put here any logic necessary to clean up,
-        // for example cancelling setTimeouts or disposing Knockout subscriptions/computeds.
-        ValidatedFormControl.prototype.dispose = function() {};
+    self.property = params.$raw.property();
+    self.required = params.required;
+};
 
-        return {
-            viewModel: {
-                createViewModel: function(params, componentInfo) {
-                    return new ValidatedFormControl (params, componentInfo);
-                }
-            },
-            template: template
-        };
-    });
+// This runs when the component is torn down. Put here any logic necessary to clean up,
+// for example cancelling setTimeouts or disposing Knockout subscriptions/computeds.
+ValidatedFormControl.prototype.dispose = function() {};
+
+export default {
+    viewModel: {
+        createViewModel: function(params, componentInfo) {
+            return new ValidatedFormControl(params, componentInfo);
+        }
+    },
+    template: template
+};
