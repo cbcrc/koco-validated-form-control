@@ -1,19 +1,19 @@
 {
-    "name": "koco-validated-form-control",
-    "version": "0.1.0",
-    "homepage": "https://github.com/cbcrc/koco-validated-form-control",
-    "authors": [
-        "Mark Moyes <mark.moyes@cbc.ca>"
-    ],
-    "description": "Simple Koco component to wrap form controls in markup for koco-validation",
-    "main": "src/validated-form-control-ui.js",
-    "keywords": [
-        "knockout",
-        "koco",
-        "validation"
-    ],
-    "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
-    },
-    "license": "MIT"
+  "name": "koco-validated-form-control",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cbcrc/koco-validated-form-control",
+  "authors": [
+    "Mark Moyes <mark.moyes@cbc.ca>"
+  ],
+  "description": "Simple Koco component to wrap form controls in markup for koco-validation",
+  "main": "src/validated-form-control-ui.js",
+  "keywords": [
+    "knockout",
+    "koco",
+    "validation"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+  },
+  "license": "MIT"
 }
