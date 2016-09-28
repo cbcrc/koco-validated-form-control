@@ -33,6 +33,6 @@
     "knockout": "^3.4.0"
   },
   "peerDependencies": {
-    "koco": "^1.0.0"
+    "koco": "^2.0.0"
   }
 }
